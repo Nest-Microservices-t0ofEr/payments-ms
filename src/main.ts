@@ -20,7 +20,7 @@ async function bootstrap() {
       servers: envs.natsServers,
     },
   }, {inheritAppConfig: true});
-  console.log('PaymentsMs - Testing trigger');
+  console.log('Health Check Configured');
   await app.startAllMicroservices();
   await app.listen(envs.port);
   logger.log(`Server is running on: ${envs.port}`);
